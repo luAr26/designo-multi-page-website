@@ -3,11 +3,12 @@
 import type { Metadata } from "next";
 import { Jost } from "next/font/google";
 import "./globals.css";
+import { twMerge } from "tailwind-merge";
 
 const jost = Jost({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
-  style: "italic",
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
@@ -21,8 +22,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
-      <body className={jost.className}>{children}</body>
+    <html lang="en">
+      <body
+        className={twMerge(
+          jost.className,
+          "antialiased",
+          "bg-white",
+          "text-dark-gray",
+        )}
+      >
+        {children}
+      </body>
     </html>
   );
 }
