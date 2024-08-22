@@ -19,6 +19,16 @@
 # misc
 .DS_Store
 *.pem
+*.sketch
+.prettierignore
+/starter-code
+
+# Avoid accidental XD or Figma upload if you convert the design file
+#######################################################
+## Please do not remove lines 11 and 12 - thanks! 🙂 ##
+#######################################################
+*.xd
+*.fig
 
 # debug
 npm-debug.log*
@@ -34,3 +44,4 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
