@@ -7,6 +7,7 @@ const config: Config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./sections/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     colors: {
@@ -17,16 +18,16 @@ const config: Config = {
       ["dark-gray"]: "var(--color-dark-gray)",
       ["light-gray"]: "var(--color-light-gray)",
     },
+    screens: {
+      tablet: "768px",
+      desktop: "1190px",
+    },
     container: {
       center: true,
       padding: {
         DEFAULT: "1.5rem",
         tablet: "2.5rem",
       },
-    },
-    screens: {
-      tablet: "768px",
-      desktop: "1190px",
     },
     fontSize: {
       h1: ["3rem", { lineHeight: "1", letterSpacing: "0", fontWeight: "500" }],
@@ -40,7 +41,7 @@ const config: Config = {
       ],
       ["h2-sm"]: [
         "1.75rem",
-        { lineHeight: "1.285714", letterSpacing: "1.4px", fontWeight: "500" },
+        { lineHeight: "1.28572", letterSpacing: "1.4px", fontWeight: "500" },
       ],
       h3: [
         "1.25rem",
@@ -65,6 +66,10 @@ const config: Config = {
       nav: [
         "0.875rem",
         { lineHeight: "1", letterSpacing: "2px", fontWeight: "400" },
+      ],
+      ["nav-mobile"]: [
+        "1.5rem",
+        { lineHeight: "1.041667", letterSpacing: "2px", fontWeight: "400" },
       ],
       error: ["0.75rem", { lineHeight: "2.166667", letterSpacing: "0" }],
       input: [

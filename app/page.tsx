@@ -1,10 +1,16 @@
 /** @format */
-import { twMerge } from "tailwind-merge";
+import Main from "@/components/Main";
+import Features from "@/sections/homepage/Features";
+import HomePageHeader from "@/sections/homepage/Header";
+import Services from "@/sections/homepage/Services";
 export default function Home() {
   return (
-    <div className="container bg-primary">
-      <h1 className="text-h1">Designo multi page website</h1>
-      <p className="text-error italic">View projects</p>
-    </div>
+    <>
+      <HomePageHeader />
+      <Main>
+        <Services />
+        <Features />
+      </Main>
+    </>
   );
 }

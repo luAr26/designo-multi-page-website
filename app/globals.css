@@ -1,6 +1,8 @@
 /** @format */
 
 @tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @layer base {
   :root {
@@ -13,5 +15,8 @@
   }
 }
 
-@tailwind components;
-@tailwind utilities;
+@layer components {
+  .btn {
+    @apply rounded-lg bg-white p-[18px_25px_16px_24px] text-btn uppercase text-black;
+  }
+}
