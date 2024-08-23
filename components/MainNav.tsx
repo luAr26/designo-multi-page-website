@@ -5,6 +5,7 @@ import HamburgerIcon from "@/public/assets/shared/mobile/icon-hamburger.svg";
 import CloseIcon from "@/public/assets/shared/mobile/icon-close.svg";
 import MobileMenu from "@/components/MobileMenu";
 import { useState } from "react";
+import Link from "next/link";
 
 const MainNav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,9 +15,13 @@ const MainNav = () => {
   return (
     <div className="container">
       <div className="flex items-center justify-between pb-[34px] pt-[35px]">
-        <div className="relative h-[27px] w-[202px]">
-          <Image src="/assets/shared/desktop/logo-dark.png" fill alt="" />
-        </div>
+        <Link href="/" className="relative h-[27px] w-[202px]">
+          <Image
+            src="/assets/shared/desktop/logo-dark.png"
+            fill
+            alt="Designo Logo"
+          />
+        </Link>
         <button onClick={handleClick}>
           <span className="sr-only">Menu</span>
           {isMenuOpen ? (
