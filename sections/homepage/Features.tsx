@@ -17,7 +17,7 @@ const features: Feature[] = [
     title: "Resourceful",
     imageUrl: "/assets/home/desktop/illustration-resourceful.svg",
     description:
-      "Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer collaboration. It guarantees superior results that fulfill our clients’ needs.",
+      "Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer collaboration. It guarantees superior results that fulfill our client's needs.",
   },
 
   {
@@ -31,7 +31,7 @@ const features: Feature[] = [
 const Features = () => {
   return (
     <div className="container">
-      <div className="flex flex-col space-y-20 pt-[120px] tablet:space-y-8">
+      <div className="flex flex-col space-y-20 pt-[120px] tablet:space-y-8 desktop:flex-row desktop:space-x-[30px] desktop:space-y-0 desktop:pt-[160px]">
         {features.map((feature, index) => (
           <Feature key={index} {...feature} />
         ))}

@@ -6,19 +6,25 @@ import CaretRightIcon from "@/public/assets/shared/caret-right.svg";
 type ServiceProps = {
   name: string;
   imageUrl: string;
+  heightFull?: boolean;
 };
 
 const Service = (props: ServiceProps) => {
-  const { name, imageUrl } = props;
+  const { name, imageUrl, heightFull } = props;
   return (
-    <div className="relative h-[250px] w-full overflow-hidden rounded-[15px] tablet:h-[200px]">
+    <div
+      className={twMerge(
+        "relative h-[250px] w-full overflow-hidden rounded-[15px] tablet:h-[200px] desktop:h-[308px]",
+        heightFull && "desktop:h-[640px]",
+      )}
+    >
       <Image
         src={imageUrl}
         alt="Web design Service"
         fill
         className="object-cover"
       />
-      <div className="absolute inset-0 flex flex-col items-center justify-center space-y-3 bg-[rgba(0,0,0,0.65)] text-white">
+      <div className="absolute inset-0 flex flex-col items-center justify-center space-y-3 bg-[rgba(0,0,0,0.65)] text-white hover:bg-[rgba(231,129,107,0.65)]">
         <h2 className="text-h2-sm uppercase tablet:text-h2">{name}</h2>
         <Link
           href=""
