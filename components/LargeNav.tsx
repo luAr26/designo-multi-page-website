@@ -1,9 +1,9 @@
 import Link from "next/link";
 
-const FooterNav = () => {
+const LargeNav = () => {
   return (
-    <nav className="mt-8 tablet:mt-0">
-      <ul className="flex flex-col items-center space-y-8 text-nav uppercase tablet:flex-row tablet:space-x-[42px] tablet:space-y-0">
+    <nav>
+      <ul className="hidden items-center justify-end space-x-[42px] text-nav uppercase tablet:flex">
         <li>
           <Link href="">Our Company</Link>
         </li>
@@ -18,4 +18,4 @@ const FooterNav = () => {
   );
 };
 
-export default FooterNav;
+export default LargeNav;

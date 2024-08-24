@@ -7,7 +7,7 @@ import InstagramIcon from "@/public/assets/shared/desktop/icon-instagram.svg";
 
 const SocialLinks = () => {
   return (
-    <ul className="mt-10 flex items-center justify-center space-x-4">
+    <ul className="mt-10 flex items-center justify-center space-x-4 tablet:mt-0">
       <li>
         <Link href="/">
           <span className="sr-only">Facebook</span>

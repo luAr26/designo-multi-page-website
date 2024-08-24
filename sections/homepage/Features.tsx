@@ -31,7 +31,7 @@ const features: Feature[] = [
 const Features = () => {
   return (
     <div className="container">
-      <div className="flex flex-col space-y-20 pt-[120px]">
+      <div className="flex flex-col space-y-20 pt-[120px] tablet:space-y-8">
         {features.map((feature, index) => (
           <Feature key={index} {...feature} />
         ))}

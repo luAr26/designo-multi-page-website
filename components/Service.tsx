@@ -11,7 +11,7 @@ type ServiceProps = {
 const Service = (props: ServiceProps) => {
   const { name, imageUrl } = props;
   return (
-    <div className="relative h-[250px] w-full overflow-hidden rounded-[15px]">
+    <div className="relative h-[250px] w-full overflow-hidden rounded-[15px] tablet:h-[200px]">
       <Image
         src={imageUrl}
         alt="Web design Service"
@@ -19,7 +19,7 @@ const Service = (props: ServiceProps) => {
         className="object-cover"
       />
       <div className="absolute inset-0 flex flex-col items-center justify-center space-y-3 bg-[rgba(0,0,0,0.65)] text-white">
-        <h2 className="text-h2-sm uppercase">{name}</h2>
+        <h2 className="text-h2-sm uppercase tablet:text-h2">{name}</h2>
         <Link
           href=""
           className={twMerge(
