@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="bg-primary pt-20 text-center text-white tablet:rounded-[15px] tablet:bg-white tablet:pt-0 desktop:text-left">
-      <div className="container tablet:max-w-[688px] tablet:rounded-[15px] tablet:bg-primary tablet:pt-[60px] desktop:max-w-[1110px] desktop:px-[95px] desktop:pt-[139px]">
+    <div className="bg-primary pt-20 text-center text-white tablet:rounded-[15px] tablet:bg-[transparent] tablet:pt-0 desktop:text-left">
+      <div className="hero-container container tablet:max-w-[688px] tablet:rounded-[15px] tablet:bg-primary tablet:pt-[60px] desktop:max-w-[1110px] desktop:px-[95px] desktop:pt-[139px]">
         <div className="desktop:flex desktop:justify-between">
           <div>
             <h1 className="mx-auto max-w-[327px] text-h1-sm tablet:max-w-[573px] tablet:text-h1 desktop:max-w-[540px]">

@@ -10,7 +10,7 @@ const Feature = (props: FeatureProps) => {
   const { title, imageUrl, description } = props;
   return (
     <div className="flex flex-col items-center tablet:flex-row tablet:space-x-12 desktop:flex-col desktop:space-x-0">
-      <div className="relative h-[202px] w-[202px] shrink-0">
+      <div className="feature-container relative h-[202px] w-[202px] shrink-0">
         <Image src={imageUrl} alt="" fill />
       </div>
       <div className="text-center tablet:text-left desktop:text-center">

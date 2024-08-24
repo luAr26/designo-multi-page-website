@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Jost } from "next/font/google";
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
+import MainNav from "@/components/MainNav";
 
 const jost = Jost({
   subsets: ["latin"],
@@ -32,7 +33,10 @@ export default function RootLayout({
           "text-dark-gray",
         )}
       >
-        {children}
+        <header>
+          <MainNav />
+          {children}
+        </header>
       </body>
     </html>
   );

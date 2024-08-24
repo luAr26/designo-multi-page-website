@@ -11,6 +11,7 @@ type ServiceProps = {
 
 const Service = (props: ServiceProps) => {
   const { name, imageUrl, heightFull } = props;
+  const hrefText = name.toLowerCase().replace(" ", "-");
   return (
     <div
       className={twMerge(
@@ -27,7 +28,7 @@ const Service = (props: ServiceProps) => {
       <div className="absolute inset-0 flex flex-col items-center justify-center space-y-3 bg-[rgba(0,0,0,0.65)] text-white hover:bg-[rgba(231,129,107,0.65)]">
         <h2 className="text-h2-sm uppercase tablet:text-h2">{name}</h2>
         <Link
-          href=""
+          href={`/services/${hrefText}`}
           className={twMerge(
             "flex items-center space-x-4 text-btn uppercase",
             "tracking-[5px]",

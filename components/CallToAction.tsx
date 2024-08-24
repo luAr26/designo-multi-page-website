@@ -3,7 +3,7 @@ import { twMerge } from "tailwind-merge";
 
 const CallToAction = () => {
   return (
-    <div className="rounded-[15px] bg-primary py-16 text-center tablet:py-[57px] desktop:flex desktop:items-center desktop:justify-between desktop:px-[95px] desktop:py-[72px] desktop:text-left">
+    <div className="call-to-action-container rounded-[15px] bg-primary py-16 text-center tablet:py-[57px] desktop:flex desktop:items-center desktop:justify-between desktop:px-[95px] desktop:py-[72px] desktop:text-left">
       <div>
         <h2
           className={twMerge(
