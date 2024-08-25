@@ -34,6 +34,24 @@
   background-repeat: no-repeat;
 }
 
+.project-info {
+  transition: background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-info h2,
+.project-info p {
+  transition: color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-link:hover .project-info {
+  background-color: var(--color-primary);
+}
+
+.project-link:hover h2,
+.project-link:hover p {
+  color: var(--color-white);
+}
+
 /* TABLET */
 @media only screen and (min-width: 768px) {
   .call-to-action-container {

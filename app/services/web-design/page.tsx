@@ -1,6 +1,8 @@
 import Main from "@/components/Main";
 import ServiceHero from "@/components/ServiceHero";
 import WebDesignProjects from "@/components/WebDesignProjects";
+import WebDesignRelatedServices from "@/components/WebDesignRelatedServices";
+import Footer from "@/sections/homepage/Footer";
 
 export default function WebDesign() {
   return (
@@ -16,7 +18,9 @@ export default function WebDesign() {
       </ServiceHero>
       <Main>
         <WebDesignProjects />
+        <WebDesignRelatedServices />
       </Main>
+      <Footer></Footer>
     </>
   );
 }
