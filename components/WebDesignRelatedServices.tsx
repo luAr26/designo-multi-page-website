@@ -1,4 +1,3 @@
-import Service from "@/components/Service";
 import Image from "next/image";
 import Link from "next/link";
 import { twMerge } from "tailwind-merge";
