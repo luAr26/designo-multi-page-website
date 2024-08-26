@@ -7,13 +7,13 @@ const MobileMenu = () => {
         <nav>
           <ul className="flex flex-col space-y-8 px-6 py-12">
             <li>
-              <Link href="">Our Company</Link>
+              <Link href="/our-company">Our Company</Link>
             </li>
             <li>
-              <Link href="">Locations</Link>
+              <Link href="/locations">Locations</Link>
             </li>
             <li>
-              <Link href="">Contact</Link>
+              <Link href="/contact">Contact</Link>
             </li>
           </ul>
         </nav>

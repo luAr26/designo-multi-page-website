@@ -5,17 +5,17 @@ const LargeNav = () => {
     <nav>
       <ul className="hidden items-center justify-end space-x-[42px] text-nav uppercase tablet:flex">
         <li>
-          <Link href="" className="hover:underline">
+          <Link href="/our-company" className="hover:underline">
             Our Company
           </Link>
         </li>
         <li>
-          <Link href="" className="hover:underline">
+          <Link href="/locations" className="hover:underline">
             Locations
           </Link>
         </li>
         <li>
-          <Link href="" className="hover:underline">
+          <Link href="/contact" className="hover:underline">
             Contact
           </Link>
         </li>

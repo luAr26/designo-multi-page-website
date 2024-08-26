@@ -52,6 +52,13 @@
   color: var(--color-white);
 }
 
+.service-hero-container {
+  background-image: url("/assets/shared/desktop/bg-pattern-small-circle.svg");
+  background-repeat: no-repeat;
+  background-position: right 0 top 50%;
+  background-size: 90%;
+}
+
 /* TABLET */
 @media only screen and (min-width: 768px) {
   .call-to-action-container {
@@ -65,10 +72,23 @@
     background-repeat: no-repeat;
     background-position: left 171px top 102px;
   }
+
+  .service-hero-container {
+    background-image: url("/assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: right -100px top 50%;
+    background-size: 120%;
+  }
 }
 
 /* DESKTOP */
 @media only screen and (min-width: 1190px) {
+  body {
+    background-image: url("/assets/shared/desktop/bg-pattern-leaf.svg");
+    background-repeat: no-repeat;
+    background-position: left 0 top 475px;
+  }
+
   .call-to-action-container {
     background-image: url("/assets/shared/desktop/bg-pattern-call-to-action.svg");
     background-size: 75%;
@@ -80,9 +100,10 @@
     background-position: right 0 top 0;
   }
 
-  body {
-    background-image: url("/assets/shared/desktop/bg-pattern-leaf.svg");
+  .service-hero-container {
+    background-image: url("/assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg");
     background-repeat: no-repeat;
-    background-position: left 0 top 475px;
+    background-position: right 0 top 50%;
+    background-size: 100%;
   }
 }
