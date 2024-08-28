@@ -21,7 +21,8 @@
   }
 }
 
-.feature-container {
+.feature-container,
+.location-icon {
   background-image: url("/assets/home/desktop/illustration-bg.png");
   background-position: 0 0;
   background-repeat: no-repeat;
