@@ -15,7 +15,7 @@ const Hero = () => {
               fully responsive websites, app design, and engaging brand
               experiences. Find out more about our services.
             </p>
-            <Link href="" className="btn mt-6 inline-block">
+            <Link href="/our-company" className="btn mt-6 inline-block">
               Learn More
             </Link>
           </div>
