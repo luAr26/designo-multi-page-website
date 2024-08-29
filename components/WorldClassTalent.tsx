@@ -12,7 +12,7 @@ const WorldClassTalent = () => {
             className="object-cover"
           />
         </div>
-        <div className="bg-[#FDF3F0] px-6 py-20 text-center tablet:py-[68px] desktop:flex desktop:flex-col desktop:justify-center desktop:rounded-r-[15px] desktop:pl-[94px] desktop:pr-[95px] desktop:text-left">
+        <div className="bg-[#FDF3F0] px-6 py-20 text-center tablet:rounded-b-[15px] tablet:py-[68px] desktop:flex desktop:flex-col desktop:justify-center desktop:rounded-r-[15px] desktop:pl-[94px] desktop:pr-[95px] desktop:text-left">
           <h3 className="text-h1-sm text-primary tablet:text-h2 tablet:tracking-[0]">
             World-class talent
           </h3>
