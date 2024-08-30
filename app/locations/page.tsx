@@ -1,5 +1,13 @@
+import LocationsList from "@/components/LocationsList";
+import Footer from "@/sections/homepage/Footer";
+
 const Locations = () => {
-  return <div className="">Locations</div>;
+  return (
+    <>
+      <LocationsList />
+      <Footer />
+    </>
+  );
 };
 
 export default Locations;
