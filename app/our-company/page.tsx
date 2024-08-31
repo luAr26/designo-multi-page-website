@@ -3,14 +3,17 @@ import LocationsSection from "@/components/LocationsSection";
 import TheRealDeal from "@/components/TheRealDeal";
 import WorldClassTalent from "@/components/WorldClassTalent";
 import Footer from "@/sections/homepage/Footer";
+import Main from "@/components/Main";
 
 const OurCompany = () => {
   return (
     <>
-      <AboutHero />
-      <WorldClassTalent />
-      <LocationsSection />
-      <TheRealDeal />
+      <Main>
+        <AboutHero />
+        <WorldClassTalent />
+        <LocationsSection />
+        <TheRealDeal />
+      </Main>
       <Footer />
     </>
   );

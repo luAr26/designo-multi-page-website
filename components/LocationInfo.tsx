@@ -2,6 +2,7 @@ import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 
 const LocationInfo = ({
+  id,
   country,
   name,
   street,
@@ -10,6 +11,7 @@ const LocationInfo = ({
   email,
   imgUrl,
 }: {
+  id: number;
   country: string;
   name: string;
   street: string;
@@ -20,7 +22,12 @@ const LocationInfo = ({
 }) => {
   return (
     <div className="tablet:container">
-      <div className="flex flex-col tablet:space-y-[31px] desktop:flex-row-reverse desktop:gap-[30px] desktop:space-y-0">
+      <div
+        className={twMerge(
+          "flex flex-col tablet:space-y-[31px] desktop:gap-[30px] desktop:space-y-0",
+          id % 2 === 0 ? "desktop:flex-row-reverse" : "desktop:flex-row",
+        )}
+      >
         <div className="relative h-[320px] w-full shrink-0 overflow-clip tablet:h-[326px] tablet:rounded-[15px] desktop:h-[326px] desktop:w-[350px]">
           <Image src={imgUrl} alt={name} fill className="object-cover" />
         </div>

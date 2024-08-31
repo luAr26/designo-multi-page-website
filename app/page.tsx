@@ -7,8 +7,8 @@ import Services from "@/sections/homepage/Services";
 export default function Home() {
   return (
     <>
-      <Hero />
       <Main>
+        <Hero />
         <Services />
         <Features />
       </Main>
