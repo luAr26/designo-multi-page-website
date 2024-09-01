@@ -19,6 +19,18 @@
   .btn {
     @apply rounded-lg bg-white p-[18px_25px_16px_24px] text-btn uppercase text-black transition-colors hover:bg-primary-light hover:text-white;
   }
+  .form-input {
+    @apply block h-[38px] w-full border-b border-white bg-[transparent] p-[0_15px_11px_15px] text-input placeholder:text-white placeholder:opacity-50 focus:border-b-2 focus:p-[0_15px_10px_15px] focus:outline-none;
+  }
+}
+
+.form-input:-webkit-autofill,
+.form-input:-webkit-autofill:hover,
+.form-input:-webkit-autofill:focus,
+.form-input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: var(--color-white);
+  caret-color: var(--color-white);
 }
 
 .feature-container,

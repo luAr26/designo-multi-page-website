@@ -18,7 +18,7 @@ const locations = [
 const LocationsSection = () => {
   return (
     <div className="py-[120px] tablet:container desktop:py-[160px]">
-      <div className="flex flex-col space-y-8 desktop:flex-row desktop:justify-around desktop:space-y-0">
+      <div className="flex flex-col space-y-12 tablet:space-y-16 desktop:flex-row desktop:justify-around desktop:space-y-0">
         {locations.map((location) => (
           <Location key={location.name} {...location} />
         ))}
