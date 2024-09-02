@@ -3,12 +3,15 @@
     "Airfilter",
     "Balonne",
     "Blogr",
+    "defaulticon",
     "Designo",
     "Eyecam",
     "Faceit",
     "formik",
     "Jost",
     "Rhyd",
-    "svgr"
+    "svgr",
+    "xposix",
+    "yposix"
   ]
 }
