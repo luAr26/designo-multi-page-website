@@ -1,5 +1,6 @@
 import dynamic from "next/dynamic";
 import { twMerge } from "tailwind-merge";
+import { LatLngExpression, LatLngTuple } from "leaflet";
 
 const Map = dynamic(() => import("@/components/Map/"), { ssr: false });
 
@@ -11,6 +12,7 @@ const LocationInfo = ({
   city,
   phone,
   email,
+  coords,
 }: {
   id: number;
   country: string;
@@ -19,6 +21,7 @@ const LocationInfo = ({
   city: string;
   phone: string;
   email: string;
+  coords: LatLngExpression | LatLngTuple;
 }) => {
   return (
     <div className="tablet:container">
@@ -29,7 +32,7 @@ const LocationInfo = ({
         )}
       >
         <div className="relative h-[320px] w-full shrink-0 overflow-clip tablet:h-[326px] tablet:rounded-[15px] desktop:h-[326px] desktop:w-[350px]">
-          <Map posix={[4.79029, -75.69003]} />
+          <Map posix={coords} zoom={15} name={name} />
         </div>
         <div className="bg-[#FDF3F0] px-6 py-20 text-center text-dark-gray tablet:rounded-[15px] tablet:py-[88px] tablet:pl-[75px] tablet:pr-[74px] tablet:text-left desktop:flex desktop:flex-1 desktop:flex-col desktop:pl-[95px] desktop:pr-[95px] desktop:text-left">
           <h2

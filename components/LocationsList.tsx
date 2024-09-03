@@ -10,6 +10,7 @@ const locations = [
     phone: "+1 253-863-8967",
     email: "contact@designo.co",
     imgUrl: "/assets/locations/desktop/image-map-canada.png",
+    coords: { lat: 43.6567, lng: -79.35579 },
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ const locations = [
     phone: "(02) 6720 9092",
     email: "contact@designo.au",
     imgUrl: "/assets/locations/desktop/image-map-australia.png",
+    coords: { lat: -32.44, lng: 148.041 },
   },
   {
     id: 3,
@@ -30,6 +32,7 @@ const locations = [
     phone: "078 3115 1400",
     email: "contact@designo.uk",
     imgUrl: "/assets/locations/desktop/image-map-united-kingdom.png",
+    coords: { lat: 51.4898, lng: -0.0882 },
   },
 ];
 

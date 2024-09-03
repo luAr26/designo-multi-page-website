@@ -10,12 +10,13 @@ import "leaflet-defaulticon-compatibility";
 interface MapProps {
   posix: LatLngExpression | LatLngTuple;
   zoom?: number;
+  name: string;
 }
 
 const defaults = { zoom: 19 };
 
 const Map = (Map: MapProps) => {
-  const { zoom = defaults.zoom, posix } = Map;
+  const { zoom = defaults.zoom, posix, name } = Map;
   return (
     <MapContainer
       zoom={zoom}
@@ -28,7 +29,9 @@ const Map = (Map: MapProps) => {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       <Marker position={posix} draggable={false}>
-        <Popup>Hey! I love Leaflet💖</Popup>
+        <Popup>
+          <span className="font-bold">{name}</span>
+        </Popup>
       </Marker>
     </MapContainer>
   );
