@@ -1,6 +1,36 @@
+"use client";
+import { useFormik } from "formik";
 import { twMerge } from "tailwind-merge";
+import * as Yup from "yup";
+import toast from "react-hot-toast";
+import IconError from "@/public/assets/contact/desktop/icon-error.svg";
 
 const ContactForm = () => {
+  // Formik logic
+  const formik = useFormik({
+    initialValues: { name: "", email: "", phone: "", message: "" },
+    // form validation
+    validationSchema: Yup.object({
+      name: Yup.string()
+        .min(2, "Name must be 2 characters or more.")
+        .max(25, "Name must be 25 characters or less.")
+        .required("Name is required."),
+      email: Yup.string()
+        .email("Invalid email address.")
+        .required("Email is required."),
+      phone: Yup.string().required("Phone is required."),
+      message: Yup.string()
+        .min(10, "Message must be 10 characters or more.")
+        .max(140, "Message must be 140 characters or less.")
+        .required("Message is required."),
+    }),
+    onSubmit: (values) => {
+      toast.success(
+        `Thank you ${values.name}, your message has sent successfully!`,
+      );
+      formik.resetForm();
+    },
+  });
   return (
     <div className="tablet:container">
       <div className="flex flex-col items-center bg-primary px-6 py-[72px] text-white tablet:items-start tablet:rounded-[15px] tablet:px-[58px] tablet:py-[71px] desktop:flex-row desktop:items-center desktop:pb-[54px] desktop:pl-[95px] desktop:pr-[96px] desktop:pt-[55px]">
@@ -13,8 +43,11 @@ const ContactForm = () => {
             to your users, drop us a line.
           </p>
         </div>
-        <form className="mt-12 flex w-full flex-col space-y-[25px] desktop:mt-0 desktop:w-[380px] desktop:shrink-0">
-          <div>
+        <form
+          onSubmit={formik.handleSubmit}
+          className="mt-12 flex w-full flex-col space-y-[25px] desktop:mt-0 desktop:w-[380px] desktop:shrink-0"
+        >
+          <div className="relative">
             <label htmlFor="name">
               <span className="sr-only">Name</span>
             </label>
@@ -24,9 +57,18 @@ const ContactForm = () => {
               id="name"
               name="name"
               className="form-input"
+              value={formik.values.name}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
             />
+            {formik.errors.name && formik.touched.name ? (
+              <p className="error-message">
+                {formik.errors.name}
+                <IconError className="h-5 w-5 text-primary" />
+              </p>
+            ) : null}
           </div>
-          <div>
+          <div className="relative">
             <label htmlFor="email">
               <span className="sr-only">Email address</span>
             </label>
@@ -36,10 +78,19 @@ const ContactForm = () => {
               id="email"
               name="email"
               className="form-input"
+              value={formik.values.email}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
             />
+            {formik.errors.email && formik.touched.email ? (
+              <p className="error-message">
+                {formik.errors.email}
+                <IconError className="h-5 w-5 text-primary" />
+              </p>
+            ) : null}
           </div>
 
-          <div>
+          <div className="relative">
             <label htmlFor="phone">
               <span className="sr-only">Phone</span>
             </label>
@@ -49,9 +100,18 @@ const ContactForm = () => {
               id="phone"
               name="phone"
               className="form-input"
+              value={formik.values.phone}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
             />
+            {formik.errors.phone && formik.touched.phone ? (
+              <p className="error-message">
+                {formik.errors.phone}
+                <IconError className="h-5 w-5 text-primary" />
+              </p>
+            ) : null}
           </div>
-          <div>
+          <div className="relative">
             <label htmlFor="message">
               <span className="sr-only">Message</span>
             </label>
@@ -60,7 +120,16 @@ const ContactForm = () => {
               id="message"
               name="message"
               className={twMerge("form-input", "h-[102px]")}
+              value={formik.values.message}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
             ></textarea>
+            {formik.errors.message && formik.touched.message ? (
+              <p className="error-message">
+                {formik.errors.message}
+                <IconError className="h-5 w-5 text-primary" />
+              </p>
+            ) : null}
           </div>
           <div className="flex justify-center pt-[15px] tablet:justify-end tablet:pt-0">
             <button type="submit" className="btn">

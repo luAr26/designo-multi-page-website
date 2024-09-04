@@ -22,6 +22,9 @@
   .form-input {
     @apply block h-[38px] w-full border-b border-white bg-[transparent] p-[0_15px_11px_15px] text-input placeholder:text-white placeholder:opacity-50 focus:border-b-2 focus:p-[0_15px_10px_15px] focus:outline-none;
   }
+  .error-message {
+    @apply absolute right-0 top-[3px] flex items-center gap-[9px] text-right text-error italic;
+  }
 }
 
 .form-input:-webkit-autofill,
