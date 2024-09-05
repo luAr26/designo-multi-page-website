@@ -14,15 +14,15 @@ const ContactForm = () => {
       name: Yup.string()
         .min(2, "Name must be 2 characters or more.")
         .max(25, "Name must be 25 characters or less.")
-        .required("Name is required."),
+        .required("Can't be empty."),
       email: Yup.string()
-        .email("Invalid email address.")
-        .required("Email is required."),
-      phone: Yup.string().required("Phone is required."),
+        .email("Please use a valid email address.")
+        .required("Can't be empty."),
+      phone: Yup.string().required("Can't be empty."),
       message: Yup.string()
         .min(10, "Message must be 10 characters or more.")
         .max(140, "Message must be 140 characters or less.")
-        .required("Message is required."),
+        .required("Can't be empty."),
     }),
     onSubmit: (values) => {
       toast.success(
