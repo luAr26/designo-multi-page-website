@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 const MobileMenu = () => {
+  // Todo: Fix the mobile menu
   return (
     <div className="absolute inset-0 top-[96px] z-10 w-full bg-[rgba(0,0,0,0.65)] text-nav-mobile uppercase text-white tablet:hidden">
       <div className="bg-black">
