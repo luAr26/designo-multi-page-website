@@ -100,11 +100,11 @@
 /* DESKTOP */
 @media only screen and (min-width: 1190px) {
   /* Todo: Add background image to the tablet and desktop version but not on the body element */
-  body {
+  /* body {
     background-image: url("/assets/shared/desktop/bg-pattern-leaf.svg");
     background-repeat: no-repeat;
     background-position: left 0 top 475px;
-  }
+  } */
 
   .call-to-action-container {
     background-image: url("/assets/shared/desktop/bg-pattern-call-to-action.svg");

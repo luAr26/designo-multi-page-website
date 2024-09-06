@@ -1,16 +1,15 @@
 import ContactForm from "@/components/ContactForm";
 import FooterContact from "@/components/FooterContact";
 import LocationsSection from "@/components/LocationsSection";
-import Main from "@/components/Main";
 import { Toaster } from "react-hot-toast";
 
 const Contact = () => {
   return (
     <>
-      <Main>
+      <main>
         <ContactForm />
         <LocationsSection />
-      </Main>
+      </main>
       <FooterContact />
       <Toaster position="top-right" />
     </>

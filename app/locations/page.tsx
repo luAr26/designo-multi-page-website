@@ -1,13 +1,12 @@
 import LocationsList from "@/components/LocationsList";
 import Footer from "@/sections/homepage/Footer";
-import Main from "@/components/Main";
 
 const Locations = () => {
   return (
     <>
-      <Main>
+      <main>
         <LocationsList />
-      </Main>
+      </main>
       <Footer />
     </>
   );

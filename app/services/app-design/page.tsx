@@ -1,4 +1,3 @@
-import Main from "@/components/Main";
 import ServiceHero from "@/components/ServiceHero";
 import AppDesignProjects from "@/components/AppDesignProjects";
 import Footer from "@/sections/homepage/Footer";
@@ -7,7 +6,7 @@ import AppDesignRelatedServices from "@/components/AppDesignRelatedServices";
 export default function AppDesign() {
   return (
     <>
-      <Main>
+      <main>
         <ServiceHero>
           <div className="service-hero-container flex flex-col items-center py-[105px] text-white tablet:py-16">
             <h1 className="text-h1-sm tablet:text-h1">App Design</h1>
@@ -19,7 +18,7 @@ export default function AppDesign() {
         </ServiceHero>
         <AppDesignProjects />
         <AppDesignRelatedServices />
-      </Main>
+      </main>
       <Footer />
     </>
   );
