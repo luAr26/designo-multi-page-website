@@ -9,34 +9,34 @@ const SocialLinks = () => {
   return (
     <ul className="mt-10 flex items-center justify-center space-x-4 tablet:mt-0">
       <li>
-        <Link href="/">
+        <a href="https://www.facebook.com/" target="_blank">
           <span className="sr-only">Facebook</span>
           <FacebookIcon className="h-6 w-6 text-primary transition-colors hover:text-primary-light" />
-        </Link>
+        </a>
       </li>
       <li>
-        <Link href="/">
+        <a href="https://www.youtube.com/" target="_blank">
           <span className="sr-only">Youtube</span>
           <YoutubeIcon className="h-6 w-6 text-primary transition-colors hover:text-primary-light" />
-        </Link>
+        </a>
       </li>
       <li>
-        <Link href="/">
+        <a href="https://x.com/" target="_blank">
           <span className="sr-only">Twitter</span>
           <TwitterIcon className="h-5 w-6 text-primary transition-colors hover:text-primary-light" />
-        </Link>
+        </a>
       </li>
       <li>
-        <Link href="/">
+        <a href="https://www.pinterest.com/" target="_blank">
           <span className="sr-only">Pinterest</span>
           <PinterestIcon className="h-6 w-6 fill-primary transition-colors hover:fill-primary-light" />
-        </Link>
+        </a>
       </li>
       <li>
-        <Link href="/">
+        <a href="https://www.instagram.com/" target="_blank">
           <span className="sr-only">Instagram</span>
           <InstagramIcon className="h-6 w-6 text-primary transition-colors hover:text-primary-light" />
-        </Link>
+        </a>
       </li>
     </ul>
   );
