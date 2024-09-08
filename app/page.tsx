@@ -6,7 +6,7 @@ import Services from "@/sections/homepage/Services";
 export default function Home() {
   return (
     <>
-      <main className="main-home">
+      <main className="main-home pt-[96px] tablet:pt-[155px]">
         <Hero />
         <Services />
         <Features />

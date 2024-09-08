@@ -1,18 +1,28 @@
 "use client";
 
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
+import { createPortal } from "react-dom";
 import Image from "next/image";
+import Link from "next/link";
+
 import HamburgerIcon from "@/public/assets/shared/mobile/icon-hamburger.svg";
 import CloseIcon from "@/public/assets/shared/mobile/icon-close.svg";
 import MobileMenu from "@/components/MobileMenu";
-import { useState } from "react";
-import Link from "next/link";
 import LargeNav from "@/components/LargeNav";
 
 const MainNav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathname]);
+
   function handleClick() {
     setIsMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen);
   }
+
   return (
     <div className="container">
       <div className="flex items-center justify-between pb-[34px] pt-[35px] tablet:py-16">
@@ -32,7 +42,7 @@ const MainNav = () => {
             <HamburgerIcon className="h-5 w-6 fill-black" />
           )}
         </button>
-        {isMenuOpen && <MobileMenu />}
+        {isMenuOpen && createPortal(<MobileMenu />, document.body)}
       </div>
     </div>
   );

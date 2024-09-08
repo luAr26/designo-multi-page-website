@@ -33,7 +33,7 @@ export default function RootLayout({
           "text-dark-gray",
         )}
       >
-        <header>
+        <header className="fixed z-[9998] w-full bg-white shadow-sm">
           <MainNav />
         </header>
         {children}

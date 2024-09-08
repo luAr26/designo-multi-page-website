@@ -4,7 +4,7 @@ import Footer from "@/sections/homepage/Footer";
 const Locations = () => {
   return (
     <>
-      <main>
+      <main className="pt-[96px] tablet:pt-[155px]">
         <LocationsList />
       </main>
       <Footer />
