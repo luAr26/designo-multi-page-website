@@ -7,7 +7,7 @@ import Footer from "@/sections/homepage/Footer";
 const OurCompany = () => {
   return (
     <>
-      <main>
+      <main className="main-about">
         <AboutHero />
         <WorldClassTalent />
         <LocationsSection />

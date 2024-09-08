@@ -3,7 +3,7 @@ import Image from "next/image";
 const TheRealDeal = () => {
   return (
     <section className="tablet:container">
-      <div className="desktop:flex desktop:flex-row-reverse">
+      <div className="the-real-deal-container desktop:flex desktop:flex-row-reverse">
         <div className="relative h-[320px] w-full tablet:overflow-clip tablet:rounded-t-[15px] desktop:h-[640px] desktop:w-[476px] desktop:shrink-0 desktop:rounded-l-none desktop:rounded-r-[15px]">
           <Image
             src="/assets/about/desktop/image-real-deal.jpg"

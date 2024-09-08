@@ -13,5 +13,6 @@
     "svgr",
     "xposix",
     "yposix"
-  ]
+  ],
+  "svg.preview.background": "custom"
 }

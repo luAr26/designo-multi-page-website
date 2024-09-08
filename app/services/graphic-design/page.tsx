@@ -6,7 +6,7 @@ import GraphicDesignRelatedServices from "@/components/GraphicDesignRelatedServi
 export default function GraphicDesign() {
   return (
     <>
-      <main>
+      <main className="main-service">
         <ServiceHero>
           <div className="service-hero-container flex flex-col items-center py-[105px] text-white tablet:py-16">
             <h1 className="text-h1-sm tablet:text-h1">Graphic Design</h1>

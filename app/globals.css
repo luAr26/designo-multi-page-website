@@ -75,6 +75,35 @@
   background-size: 90%;
 }
 
+.about-hero-container > div:last-child {
+  background-image: url("/assets/about/desktop/bg-pattern-hero-about-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 292px 292px;
+  background-position: right 0 top -140px;
+}
+
+.world-class-talent-container > div:last-child {
+  background-image: url("/assets/shared/mobile/bg-pattern-1-circle.svg"),
+    url("/assets/shared/mobile/bg-pattern-1-circle.svg"),
+    url("/assets/shared/mobile/bg-pattern-1-circle.svg");
+  background-repeat: no-repeat;
+  background-position:
+    left 0 top 0,
+    left 0 top 292px,
+    left 292px top 292px;
+}
+
+.the-real-deal-container > div:last-child {
+  background-image: url("/assets/shared/mobile/bg-pattern-1-circle.svg"),
+    url("/assets/shared/mobile/bg-pattern-1-circle.svg"),
+    url("/assets/shared/mobile/bg-pattern-1-circle.svg");
+  background-repeat: no-repeat;
+  background-position:
+    left 0 top 0,
+    left 0 top 292px,
+    left 292px top 292px;
+}
+
 /* TABLET */
 @media only screen and (min-width: 768px) {
   .call-to-action-container {
@@ -95,16 +124,73 @@
     background-position: right -100px top 50%;
     background-size: 120%;
   }
+
+  .about-hero-container > div:last-child {
+    background-image: url("/assets/about/desktop/bg-pattern-hero-about-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    background-position: right 170.55px bottom 101.33px;
+  }
+
+  .world-class-talent-container > div:last-child {
+    background-image: url("/assets/shared/mobile/bg-pattern-1-circle.svg"),
+      url("/assets/shared/mobile/bg-pattern-1-circle.svg"),
+      url("/assets/shared/mobile/bg-pattern-1-circle.svg");
+    background-repeat: no-repeat;
+    background-position:
+      left 94px top -212px,
+      left 94px top 80px,
+      right 11px bottom 44px;
+  }
+
+  .the-real-deal-container > div:last-child {
+    background-image: url("/assets/shared/mobile/bg-pattern-1-circle.svg"),
+      url("/assets/shared/mobile/bg-pattern-1-circle.svg"),
+      url("/assets/shared/mobile/bg-pattern-1-circle.svg");
+    background-repeat: no-repeat;
+    background-position:
+      left 94px top -212px,
+      left 94px top 80px,
+      right 11px bottom 44px;
+  }
 }
 
 /* DESKTOP */
 @media only screen and (min-width: 1190px) {
-  /* Todo: Add background image to the tablet and desktop version but not on the body element */
-  /* body {
+  .main-home {
+    position: relative;
     background-image: url("/assets/shared/desktop/bg-pattern-leaf.svg");
     background-repeat: no-repeat;
-    background-position: left 0 top 475px;
-  } */
+    background-position: left 0 top 325px;
+  }
+
+  .main-home::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 1678px;
+    width: 1006px;
+    height: 594px;
+    z-index: -1;
+    background-image: url("/assets/shared/desktop/bg-pattern-leaf.svg");
+    background-repeat: no-repeat;
+    transform: scale(-1);
+  }
+
+  .main-service {
+    background-image: url("/assets/shared/desktop/bg-pattern-leaf.svg");
+    background-repeat: no-repeat;
+    background-position: left 0 top 126px;
+  }
+
+  .main-about {
+    background-image: url("/assets/shared/desktop/bg-pattern-leaf.svg"),
+      url("/assets/shared/desktop/bg-pattern-leaf.svg");
+    background-repeat: no-repeat;
+    background-position:
+      left 0 top 320px,
+      right -396px top 1582px;
+  }
 
   .call-to-action-container {
     background-image: url("/assets/shared/desktop/bg-pattern-call-to-action.svg");
@@ -122,5 +208,31 @@
     background-repeat: no-repeat;
     background-position: right 0 top 50%;
     background-size: 100%;
+  }
+
+  .about-hero-container > div:last-child {
+    background-image: url("/assets/about/desktop/bg-pattern-hero-about-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: right 0 bottom 0;
+  }
+
+  .world-class-talent-container > div:last-child {
+    background-image: url("/assets/shared/mobile/bg-pattern-1-circle-2.svg"),
+      url("/assets/shared/mobile/bg-pattern-1-circle-2.svg"),
+      url("/assets/shared/mobile/bg-pattern-1-circle.svg");
+    background-repeat: no-repeat;
+    background-position:
+      left -146px top 56px,
+      left -146px bottom 0,
+      left 146px bottom 0;
+  }
+
+  .the-real-deal-container > div:last-child {
+    background-image: url("/assets/shared/mobile/bg-pattern-1-circle-2.svg"),
+      url("/assets/shared/mobile/bg-pattern-1-circle.svg"), none;
+    background-repeat: no-repeat;
+    background-position:
+      left 0 bottom 0,
+      left 292px bottom 0;
   }
 }

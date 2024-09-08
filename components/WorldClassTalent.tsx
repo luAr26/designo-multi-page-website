@@ -3,7 +3,7 @@ import Image from "next/image";
 const WorldClassTalent = () => {
   return (
     <section className="tablet:container tablet:mt-[120px]">
-      <div className="desktop:flex">
+      <div className="world-class-talent-container desktop:flex">
         <div className="relative h-[320px] w-full tablet:overflow-clip tablet:rounded-t-[15px] desktop:h-[640px] desktop:w-[476px] desktop:shrink-0 desktop:rounded-l-[15px] desktop:rounded-r-none">
           <Image
             src="/assets/about/desktop/image-world-class-talent.jpg"
