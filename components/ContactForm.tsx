@@ -33,7 +33,7 @@ const ContactForm = () => {
   });
   return (
     <div className="tablet:container">
-      <div className="flex flex-col items-center bg-primary px-6 py-[72px] text-white tablet:items-start tablet:rounded-[15px] tablet:px-[58px] tablet:py-[71px] desktop:flex-row desktop:items-center desktop:pb-[54px] desktop:pl-[95px] desktop:pr-[96px] desktop:pt-[55px]">
+      <div className="contact-hero-container flex flex-col items-center bg-primary px-6 py-[72px] text-white tablet:items-start tablet:rounded-[15px] tablet:px-[58px] tablet:py-[71px] desktop:flex-row desktop:items-center desktop:pb-[54px] desktop:pl-[95px] desktop:pr-[96px] desktop:pt-[55px]">
         <div className="text-center tablet:text-left">
           <h2 className="text-h1-sm tablet:text-h1">Contact Us</h2>
           <p className="mt-6 max-w-[70ch] text-body-sm tablet:text-body desktop:pr-[95px]">

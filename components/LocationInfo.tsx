@@ -34,13 +34,8 @@ const LocationInfo = ({
         <div className="relative h-[320px] w-full shrink-0 overflow-clip tablet:h-[326px] tablet:rounded-[15px] desktop:h-[326px] desktop:w-[350px]">
           <Map posix={coords} zoom={15} name={name} />
         </div>
-        <div className="bg-[#FDF3F0] px-6 py-20 text-center text-dark-gray tablet:rounded-[15px] tablet:py-[88px] tablet:pl-[75px] tablet:pr-[74px] tablet:text-left desktop:flex desktop:flex-1 desktop:flex-col desktop:pl-[95px] desktop:pr-[95px] desktop:text-left">
-          <h2
-            className={twMerge(
-              "text-h1-sm text-primary tablet:text-h2",
-              "tablet:tracking-[0]",
-            )}
-          >
+        <div className="location-info-container bg-[#FDF3F0] px-6 py-20 text-center text-dark-gray tablet:rounded-[15px] tablet:py-[88px] tablet:pl-[75px] tablet:pr-[74px] tablet:text-left desktop:flex desktop:flex-1 desktop:flex-col desktop:pl-[95px] desktop:pr-[95px] desktop:text-left">
+          <h2 className="text-h1-sm text-primary tablet:text-h2 tablet:tracking-[0]">
             {country}
           </h2>
           <div className="tablet:flex tablet:space-x-[60px]">

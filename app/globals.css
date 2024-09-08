@@ -82,6 +82,12 @@
   background-position: right 0 top -140px;
 }
 
+.contact-hero-container {
+  background-image: url("/assets/contact/mobile/bg-pattern-hero-contact-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: left -92px top 0;
+}
+
 .world-class-talent-container > div:last-child {
   background-image: url("/assets/shared/mobile/bg-pattern-1-circle.svg"),
     url("/assets/shared/mobile/bg-pattern-1-circle.svg"),
@@ -101,6 +107,15 @@
   background-position:
     left 0 top 0,
     left 0 top 292px,
+    left 292px top 292px;
+}
+
+.location-info-container {
+  background-image: url("/assets/shared/mobile/bg-pattern-1-circle.svg"),
+    url("/assets/shared/mobile/bg-pattern-1-circle.svg");
+  background-repeat: no-repeat;
+  background-position:
+    left 0 top 0,
     left 292px top 292px;
 }
 
@@ -132,6 +147,12 @@
     background-position: right 170.55px bottom 101.33px;
   }
 
+  .contact-hero-container {
+    background-image: url("/assets/contact/desktop/bg-pattern-hero-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: left -123px top -83px;
+  }
+
   .world-class-talent-container > div:last-child {
     background-image: url("/assets/shared/mobile/bg-pattern-1-circle.svg"),
       url("/assets/shared/mobile/bg-pattern-1-circle.svg"),
@@ -152,6 +173,15 @@
       left 94px top -212px,
       left 94px top 80px,
       right 11px bottom 44px;
+  }
+
+  .location-info-container {
+    background-image: url("/assets/shared/mobile/bg-pattern-1-circle-2.svg"),
+      url("/assets/shared/mobile/bg-pattern-1-circle.svg");
+    background-repeat: no-repeat;
+    background-position:
+      left 0 bottom 0,
+      left 292px bottom 0;
   }
 }
 
@@ -192,6 +222,12 @@
       right -396px top 1582px;
   }
 
+  .main-contact {
+    background-image: url("/assets/shared/desktop/bg-pattern-leaf.svg");
+    background-repeat: no-repeat;
+    background-position: right 0 top 730px;
+  }
+
   .call-to-action-container {
     background-image: url("/assets/shared/desktop/bg-pattern-call-to-action.svg");
     background-size: 75%;
@@ -214,6 +250,10 @@
     background-image: url("/assets/about/desktop/bg-pattern-hero-about-desktop.svg");
     background-repeat: no-repeat;
     background-position: right 0 bottom 0;
+  }
+
+  .contact-hero-container {
+    background-position: left 0 bottom 0;
   }
 
   .world-class-talent-container > div:last-child {

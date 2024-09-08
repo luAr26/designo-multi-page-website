@@ -6,7 +6,7 @@ import { Toaster } from "react-hot-toast";
 const Contact = () => {
   return (
     <>
-      <main>
+      <main className="main-contact">
         <ContactForm />
         <LocationsSection />
       </main>
