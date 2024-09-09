@@ -1,11 +1,19 @@
 import Link from "next/link";
+import { twMerge } from "tailwind-merge";
 
-const LargeNav = () => {
+const LargeNav = ({ pathName }: { pathName: string }) => {
+  console.log(pathName);
   return (
     <nav>
       <ul className="hidden items-center justify-end space-x-[42px] text-nav uppercase tablet:flex">
         <li>
-          <Link href="/our-company" className="hover:underline">
+          <Link
+            href="/our-company"
+            className={twMerge(
+              "hover:underline",
+              pathName === "/our-company" && "underline",
+            )}
+          >
             Our Company
           </Link>
         </li>

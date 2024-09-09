@@ -5,6 +5,8 @@ import { Jost } from "next/font/google";
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
 import MainNav from "@/components/MainNav";
+import { headers } from "next/headers";
+import path from "path";
 
 const jost = Jost({
   subsets: ["latin"],
@@ -23,6 +25,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const pathname = headers().get("x-next-pathname") as string;
   return (
     <html lang="en">
       <body
@@ -34,7 +37,7 @@ export default function RootLayout({
         )}
       >
         <header className="fixed z-[9998] w-full bg-white shadow-sm">
-          <MainNav />
+          <MainNav pathName={pathname} />
         </header>
         {children}
       </body>
