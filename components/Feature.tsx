@@ -14,7 +14,9 @@ const Feature = (props: FeatureProps) => {
         <Image src={imageUrl} alt="" fill />
       </div>
       <div className="text-center tablet:text-left desktop:text-center">
-        <h3 className="mt-12 text-h3 uppercase">{title}</h3>
+        <h3 className="mt-12 text-h3 uppercase tablet:mt-0 desktop:mt-12">
+          {title}
+        </h3>
         <p className="mt-8 max-w-[327px] text-body tablet:max-w-none">
           {description}
         </p>

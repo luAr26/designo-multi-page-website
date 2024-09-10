@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github repo](https://github.com/luAr26/designo-multi-page-website)
+- Live Site URL: [Live Demo](https://designo-multi-page-website-zeta.vercel.app/)
 
 ## My process
 
