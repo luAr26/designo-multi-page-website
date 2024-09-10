@@ -24,6 +24,7 @@ const Service = (props: ServiceProps) => {
         alt="Web design Service"
         fill
         className="object-cover"
+        sizes="100%"
       />
       <div className="absolute inset-0 flex flex-col items-center justify-center space-y-3 bg-[rgba(0,0,0,0.65)] text-white hover:bg-[rgba(231,129,107,0.65)]">
         <h2 className="text-h2-sm uppercase tablet:text-h2">{name}</h2>

@@ -10,6 +10,7 @@ const AboutHero = () => {
             alt="About Hero"
             fill
             className="object-cover"
+            sizes="(max-width: 768px) 100%, 476px"
           />
         </div>
         <div className="bg-primary px-6 py-20 text-center text-white tablet:rounded-b-[15px] tablet:py-16 desktop:flex desktop:flex-col desktop:justify-center desktop:rounded-l-[15px] desktop:rounded-r-none desktop:pl-[95px] desktop:pr-[82px] desktop:text-left">

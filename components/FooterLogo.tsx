@@ -9,6 +9,7 @@ const FooterLogo = () => {
           src="/assets/shared/desktop/logo-light.png"
           fill
           alt="Designo Logo"
+          sizes="202px"
         />
       </Link>
     </div>

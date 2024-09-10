@@ -25,6 +25,17 @@
   .error-message {
     @apply absolute right-0 top-[3px] flex items-center gap-[9px] text-right text-error italic;
   }
+
+  .active:link,
+  .active:visited {
+    @apply font-bold;
+  }
+
+  .active:active,
+  .active:hover {
+    text-decoration-line: none !important;
+    cursor: default;
+  }
 }
 
 .form-input:-webkit-autofill,

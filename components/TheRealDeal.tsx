@@ -10,6 +10,7 @@ const TheRealDeal = () => {
             alt="The real deal"
             fill
             className="object-cover"
+            sizes="(max-width: 768px) 100%, 476px"
           />
         </div>
         <div className="bg-[#FDF3F0] px-6 py-20 text-center tablet:rounded-b-[15px] tablet:py-[68px] desktop:flex desktop:flex-col desktop:justify-center desktop:rounded-l-[15px] desktop:pl-[94px] desktop:pr-[95px] desktop:text-left">

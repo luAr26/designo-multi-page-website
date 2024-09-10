@@ -20,13 +20,31 @@ const Hero = () => {
             </Link>
           </div>
           <div className="relative mx-auto mt-20 h-[371px] w-[284px] tablet:hidden">
-            <Image src="/assets/home/mobile/hero-image.png" alt="" fill />
+            <Image
+              src="/assets/home/mobile/hero-image.png"
+              alt=""
+              fill
+              sizes="284px"
+              priority
+            />
           </div>
           <div className="relative mx-auto mt-20 hidden h-[371px] w-[284px] tablet:block desktop:hidden">
-            <Image src="/assets/home/tablet/hero-image.png" alt="" fill />
+            <Image
+              src="/assets/home/tablet/hero-image.png"
+              alt=""
+              fill
+              sizes="284px"
+              priority
+            />
           </div>
           <div className="relative hidden h-[501px] w-[284px] desktop:block">
-            <Image src="/assets/home/desktop/hero-image.png" alt="" fill />
+            <Image
+              src="/assets/home/desktop/hero-image.png"
+              alt=""
+              fill
+              sizes="284px"
+              priority
+            />
           </div>
         </div>
       </div>

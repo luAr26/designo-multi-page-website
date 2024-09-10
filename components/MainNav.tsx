@@ -11,7 +11,7 @@ import CloseIcon from "@/public/assets/shared/mobile/icon-close.svg";
 import MobileMenu from "@/components/MobileMenu";
 import LargeNav from "@/components/LargeNav";
 
-const MainNav = ({ pathName }: { pathName: string }) => {
+const MainNav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
 
@@ -31,9 +31,10 @@ const MainNav = ({ pathName }: { pathName: string }) => {
             src="/assets/shared/desktop/logo-dark.png"
             fill
             alt="Designo Logo"
+            sizes="202px"
           />
         </Link>
-        <LargeNav pathName={pathName} />
+        <LargeNav />
         <button className="tablet:hidden" onClick={handleClick}>
           <span className="sr-only">Menu</span>
           {isMenuOpen ? (
